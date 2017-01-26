@@ -1,0 +1,184 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Glassfish Server</title>
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/black.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				keyboard: true,
+				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+                transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/none
+			});
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+			<!-- SLIDE 0 -->
+				<section>
+					<h1>GlassFish Server</h1>
+					<h2>Sun Microsystems/Oracle</h2>
+					<h3>¿Qué es un Servidor de aplicaciones?</h3>	
+				</section>
+				<!-- SLIDE 1 -->
+				<section>
+					<h2>¿Para qué se usa un servidor de aplicaciones?</h2>
+					<ul>
+						<li>Evitar las aplicaciones de escritorio</li>
+						<li>Aplicaciones "three-tier"(GUI,Lógica Empresarial,Base de Datos)</li>
+						<li>Soporte de sitio web</li>
+					</ul>
+				</section>
+				<section>
+					<h2>¿Por qué usar un servidor de aplicaciones?</h2>
+					<ul>
+						<li>Escalabilidad</li>
+						<li>Disminuye la complejidad del desarrollo</li>
+						<li>Buen rendimiento</li>
+						<li>Seguridad</li>
+					</ul>
+				</section>
+
+				<section>	
+					<h1>GlassFish</h1>
+				</section>
+
+			<!-- SLIDE 2 -->
+			<section>
+				<h2>Ventajas</h2>
+				<ul>
+					<li>Gratuito</li>
+					<li>Código abierto</li>
+					<li>Integración total con NetBeans</li>
+					<li>Linux y Windows</li>
+					<li>Consola de administración súper-chida</li>
+				</ul>
+			</section>
+
+			<!-- SLIDE 3 -->
+			<section>
+				<h2>Desventajas</h2>
+				<ul>
+					<li>Gratuito(Mantenimiento)</li>
+					<li>Difícil integración con eclipse.</li>
+					<li>Sacrifica velocidad para buscar ser más robusto.</li>
+					<li>No desconecta las conexiones a la BD y luego se cae por muchas conexiones.</li>
+				</ul>
+			</section>
+			<!-- INSTALACIÓN -->
+			<section>
+				<section><h2>Instalación GlassFish</h2></section>
+				<section>
+					<h3>Actualizar SO</h3>
+					<img src="imgTrabajo/1.jpg"><br>
+				</section>
+				<section>
+					<h3>Instalar Java 8</h3>
+					<img src="imgTrabajo/2.jpg"><br>
+					<img src="imgTrabajo/3.jpg"><br>
+					<img src="imgTrabajo/4.jpg"><br>
+					<img src="imgTrabajo/5.jpg"><br>
+				</section>
+				<section>
+					<h3>Descargar Glassfish</h3>
+					<img src="imgTrabajo/6.jpg">
+				</section>
+				<section>
+					<h3>Configurar inicio</h3>
+					<img src="imgTrabajo/7.jpg"><br>
+					<img src="imgTrabajo/9.jpg"><br>
+					<img src="imgTrabajo/10.jpg"><br>
+				</section>
+				<section>
+					<img src="imgTrabajo/8.jpg"><br>
+				</section>
+				<section>
+					<h3>Iniciar Glassfish</h3>
+					<img src="imgTrabajo/11.jpg"><br>
+				</section>
+				<section>
+					<h3>Puertos de Glassfish</h3>
+					<img src="imgTrabajo/12.jpg"><br>
+				</section>
+				<section>
+					<h2>‘Secure Admin must be enabled to access the DAS remotely’</h2>
+					<img src="imgTrabajo/raw.gif"><br>
+				</section>
+				<section>
+					<h3>Todo tiene solución</h3>
+					<img src="imgTrabajo/13.jpg"><br>
+					<img src="imgTrabajo/14.jpg"><br>
+					<img src="imgTrabajo/15.jpg"><br>
+				</section>
+				<section>
+					<h4>"remote failure: At least one admin user has an empty password, which secure admin does not permit. Use the change-admin-password command or the admin console to create non-empty passwords for admin accounts.
+					Command enable-secure-admin failed."</h4>
+					<img src="imgTrabajo/krabs.jpg">
+				</section>
+				<section>
+					<img src="imgTrabajo/17.jpg">
+				</section>
+				<section>
+					<img src="imgTrabajo/18.jpg">
+					<img src="imgTrabajo/19.jpg">
+					<img src="imgTrabajo/20.jpg">
+				</section>
+			</section>
+
+			<!-- CRÉDITOS -->
+			<section>
+				<h2>Documentación</h2>
+				<ul>
+					<li><a href="http://www.service-architecture.com/articles/application-servers/when_to_use_an_application_server.html">Application Server</a></li>
+					<li><a href="https://prezi.com/5hr26dqbb1sz/glassfish/">Glassfish</a></li>
+					<li><a href="http://www.javamexico.org/blogs/laliux/jboss_vs_glassfish">Glassfish</a></li>
+				</ul>
+			</section>
+			<section>
+				<ul>
+					<li>Joel Casañas Hernández</li>
+					<li>María Jesús Patricio García</li>
+					<li>Ana Rodríguez González</li>
+					<li>Javier Luis Moreno Villena</li>
+				</ul>
+			</section>
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				history: true,
+
+				// More info https://github.com/hakimel/reveal.js#dependencies
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+			});
+		</script>
+	</body>
+</html>
